@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/05/25||22:43:36" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Ball&amp;beam" uid="Ball&amp;beam" version="319">
+<AssemblyFile name="Ball&amp;beam.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Base.iges-1" uid="Base.iges-1" grounded="true" entityUid="Base.iges*:*Predeterminado">
+<Transform>
+<Rotation>1 0 1.0157985563807886e-12 0 1 0 -1.0157985563807886e-12 0 1</Rotation>
+<Translation>-0.10383289810046877 -0.074801662297187266 1.0161425842572787</Translation>
+</Transform>
+</Instance>
+<Instance name="Soport Servo.iges-1" uid="Soport Servo.iges-1" entityUid="Soport Servo.iges*:*Predeterminado">
+<Transform>
+<Rotation>1 0 1.0157985563807886e-12 0 1 0 -1.0157985563807886e-12 0 1</Rotation>
+<Translation>-0.10383289810046877 -0.074801662297187266 1.0161425842572784</Translation>
+</Transform>
+</Instance>
+<Instance name="MG996R.step.iges-1" uid="MG996R.step.iges-1" entityUid="MG996R.step.iges*:*Predeterminado">
+<Transform>
+<Rotation>1 0 1.0157985563807886e-12 0 1 0 -1.0157985563807886e-12 0 1</Rotation>
+<Translation>-0.10383289810046879 -0.074801662297187266 1.0161425842572784</Translation>
+</Transform>
+</Instance>
+<Instance name="Suport Sensor.iges-1" uid="Suport Sensor.iges-1" entityUid="Suport Sensor.iges*:*Predeterminado">
+<Transform>
+<Rotation>0.99970530240786715 -1.2246556147827131e-16 -0.024275673782515817 1.2243025702004157e-16 1 0 0.024275673782515817 0 0.99970530240786715</Rotation>
+<Translation>-0.10120556549275302 -0.073808755339092841 1.0123985512332359</Translation>
+</Transform>
+</Instance>
+<Instance name="Balance.iges-1" uid="Balance.iges-1" entityUid="Balance.iges*:*Predeterminado">
+<Transform>
+<Rotation>0.99970530240786715 -1.2246629059840474e-16 -0.024275673782515817 1.2243025702004162e-16 1 0 0.024275673782515817 0 0.99970530240786715</Rotation>
+<Translation>-0.10119920843771209 -0.073801662297187126 1.0121367590502812</Translation>
+</Transform>
+</Instance>
+<Instance name="Roda.iges-1" uid="Roda.iges-1" entityUid="Roda.iges*:*Predeterminado">
+<Transform>
+<Rotation>-0.99261622439552988 -2.1370216266533601e-16 -0.12129728383918234 -2.1608565518246759e-16 1 0 0.12129728383918234 0 -0.99261622439552988</Rotation>
+<Translation>-0.01765159904689749 -0.074001662297187187 1.0972964373249747</Translation>
+</Transform>
+</Instance>
+<Instance name="Fork S.iges-1" uid="Fork S.iges-1" entityUid="Fork S.iges*:*Predeterminado">
+<Transform>
+<Rotation>-0.99669168825223553 0.078977620612155644 0.019188903338933441 -0.079620732894590221 -0.99619469809174555 -0.035449434229960497 0.016316171800911099 -0.036859990997535244 0.99918723150439881</Rotation>
+<Translation>-0.030081618424537417 0.10521853930863635 1.0154209958682463</Translation>
+</Transform>
+</Instance>
+<Instance name="Cuerpo 06.iges-1" uid="Cuerpo 06.iges-1" entityUid="Cuerpo 06.iges*:*Predeterminado">
+<Transform>
+<Rotation>0.69441805476910734 -2.24798404889031e-16 0.7195717929509805 -2.3109252647305073e-16 1 5.3542046351536856e-16 -0.7195717929509805 -5.3809355524119874e-16 0.69441805476910734</Rotation>
+<Translation>-0.16916629775093889 -0.074001662297187812 1.080822288426885</Translation>
+</Transform>
+</Instance>
+<Instance name="arm_4pad.iges-1" uid="arm_4pad.iges-1" entityUid="arm_4pad.iges*:*Predeterminado">
+<Transform>
+<Rotation>-0.99261622439553632 -2.0427485799468262e-16 -0.1212972838391303 -2.0674382957942052e-16 1 0 0.1212972838391303 0 -0.99261622439553632</Rotation>
+<Translation>-0.017651599046898836 -0.074801662297187252 1.0972964373249798</Translation>
+</Transform>
+</Instance>
+<Instance name="Varilla LL.iges-1" uid="Varilla LL.iges-1" entityUid="Varilla LL.iges*:*Predeterminado">
+<Transform>
+<Rotation>-0.99840460644885243 0.056464518254497435 1.0157985563807886e-12 -0.056464518254497435 -0.99840460644885243 0 1.0141779579147023e-12 -5.735657612915076e-14 1</Rotation>
+<Translation>0.21904950878725629 0.10632131485115161 1.0161425842569507</Translation>
+</Transform>
+</Instance>
+<Instance name="Fork B.iges-1" uid="Fork B.iges-1" entityUid="Fork B.iges*:*Predeterminado">
+<Transform>
+<Rotation>1 0 1.0157985563807886e-12 0 1 0 -1.0157985563807886e-12 0 1</Rotation>
+<Translation>-0.1038328981004691 -0.074801662297187266 1.0161502665123634</Translation>
+</Transform>
+</Instance>
+<Instance name="Varilla C.iges-1" uid="Varilla C.iges-1" entityUid="Varilla C.iges*:*Predeterminado">
+<Transform>
+<Rotation>-0.99442703278507272 -0.077674571497636638 0.071284903092693711 0.080024425805483607 -0.99631945935740773 0.030718498991086519 0.068636489863474551 0.036251839241909771 0.99698286665860014</Rotation>
+<Translation>-0.019244566151457986 0.091294429490374307 1.010851660871134</Translation>
+</Transform>
+</Instance>
+<Instance name="Ball.iges-1" uid="Ball.iges-1" entityUid="Ball.iges*:*Predeterminado">
+<Transform>
+<Rotation>0.53012845172069101 -0.78602707061026666 -0.31800199518881284 -0.77640530928107254 -0.60073405869812468 0.19056071588929321 -0.3408205105277336 0.14587678015339092 -0.92874180729398315</Rotation>
+<Translation>-0.10769054549153217 0.1665537800328219 1.3574350480661452</Translation>
+</Transform>
+</Instance>
+<Instance name="GP2Y0A21YK0F.step.iges-1" uid="GP2Y0A21YK0F.step.iges-1" entityUid="GP2Y0A21YK0F.step.iges*:*Predeterminado">
+<Transform>
+<Rotation>0.99970530240786715 -9.1918601921579395e-16 -0.02427567378251573 0 1 -3.3818526934966719e-14 0.02427567378251573 3.3806175645710158e-14 0.99970530240786715</Rotation>
+<Translation>-0.10120879494233284 -0.073790050831961079 1.0125315443631271</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base.iges-1</Uid>
+</InstancePath>
+<Position>0 0 0.0049999999999998934</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.0745204749703407 0.15024408766627298 0.0050000000000001155</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base.iges-1</Uid>
+</InstancePath>
+<Position>0.044999847021784709 0.14577879546565101 -0.010599999999999943</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.044999847021784709 0.14577879546565101 -0.010599999999999943</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base.iges-1</Uid>
+</InstancePath>
+<Position>0.014983115372997693 0.12122120453434899 -0.010599999999999943</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.014983115372997693 0.12122120453434899 -0.010599999999999943</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.0061205948748407207 0.114544087666273 0.048200000000500065</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MG996R.step.iges-1</Uid>
+</InstancePath>
+<Position>0.0061205948748407485 0.11700000000000001 0.048200000000500065</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.030000000000000013 0.11700000000000001 0.040200000000000014</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MG996R.step.iges-1</Uid>
+</InstancePath>
+<Position>0.0070649317158407859 0.11700000000000001 0.04320000000049995</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Soport Servo.iges-1</Uid>
+</InstancePath>
+<Position>0.055120594874840709 0.1227 0.048200000000500065</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MG996R.step.iges-1</Uid>
+</InstancePath>
+<Position>0.055120594874840709 0.11700000000000001 0.048200000000500065</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MG996R.step.iges-1</Uid>
+</InstancePath>
+<Position>0.040620594874840696 0.105 0.04320000000049995</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.04062059487417613 0.10499999999999998 0.043200000000193528</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MG996R.step.iges-1</Uid>
+</InstancePath>
+<Position>0.040620594874840696 0.11700000000000001 0.04320000000049995</Position>
+<Axis>-1.22464679914735e-16 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.04062059487417613 0.10139999999999999 0.043200000000193528</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.04062059487417613 0.099500000000000005 0.043200000000193528</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.11619081871429204 0.098699999999999996 0.070812022180277934</Position>
+<Axis>-1.2246467991473552e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.04062059487417613 0.10139999999999999 0.043200000000193528</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.04062059487417613 0.093700000000000006 0.043200000000193306</Position>
+<Axis>-1.2246467991473552e-16 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.054518477837233098 0.10199999999999999 0.043442588449748687</Position>
+<Axis>-1.2246467991473579e-16 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.054518477837233126 0.098900000000000002 0.043442588449748687</Position>
+<Axis>1.2246467991473552e-16 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>arm_4pad.iges-1</Uid>
+</InstancePath>
+<Position>0.026722711912115338 0.10199999999999999 0.042957411550725189</Position>
+<Axis>-1.2246467991473579e-16 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.026722711912115338 0.098900000000000002 0.042957411550725411</Position>
+<Axis>1.2246467991473552e-16 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.11619081871429204 0.093700000000000006 0.070812022180277934</Position>
+<Axis>1.2246467991473552e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Cuerpo 06.iges-1</Uid>
+</InstancePath>
+<Position>0.11064231447197093 0.093700000000000006 0.00245786750240784</Position>
+<Axis>-1.836966730631159e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roda.iges-1</Uid>
+</InstancePath>
+<Position>0.068040526521480627 0.10100000000000001 0.043678616687999661</Position>
+<Axis>1.2246467991473552e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Cuerpo 06.iges-1</Uid>
+</InstancePath>
+<Position>0.068040526521480515 0.1037 0.043678616687999883</Position>
+<Axis>1.836966730631159e-16 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Cuerpo 06.iges-1</Uid>
+</InstancePath>
+<Position>0.066159094786367834 0.086199999999999999 0.048579913927110141</Position>
+<Axis>-0.35836794954530005 0 0.93358042649720163</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Varilla C.iges-1</Uid>
+</InstancePath>
+<Position>0.030322299831837901 0.086199999999999999 0.14193795657682995</Position>
+<Axis>0.3583679495453001 0 -0.93358042649720197</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Cuerpo 06.iges-1</Uid>
+</InstancePath>
+<Position>0.027789675327633545 0 0.033851273751714039</Position>
+<Axis>-0.35836794954530005 0 0.93358042649720163</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Varilla C.iges-1</Uid>
+</InstancePath>
+<Position>0.028683329670695298 0 0.034194315513768503</Position>
+<Axis>0.3583679495453001 0 -0.93358042649720197</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base.iges-1</Uid>
+</InstancePath>
+<Position>0.16400000000000001 0.085999999999999993 0.020000000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Varilla LL.iges-1</Uid>
+</InstancePath>
+<Position>0.16400000000000009 0.086000000000000035 0.094100000000000072</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base.iges-1</Uid>
+</InstancePath>
+<Position>0 0 0.018999999999999906</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Varilla LL.iges-1</Uid>
+</InstancePath>
+<Position>0 0 0.018999999999999906</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Varilla LL.iges-1</Uid>
+</InstancePath>
+<Position>0 0 0.094100000000000072</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Fork B.iges-1</Uid>
+</InstancePath>
+<Position>0.12290078843801801 -0.00020000000000000573 0.09409231774492155</Position>
+<Axis>-2.3108314941056158e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Varilla LL.iges-1</Uid>
+</InstancePath>
+<Position>0.16400000000000009 0.086000000000000035 0.094100000000000072</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Fork B.iges-1</Uid>
+</InstancePath>
+<Position>0.16400000000000001 0.085999999999999993 0.093936317744921505</Position>
+<Axis>-2.3108314941056158e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Varilla C.iges-1</Uid>
+</InstancePath>
+<Position>0.011481668092521019 1.1102230246251565e-16 0.079006175985634419</Position>
+<Axis>-0.3583679495453001 0 0.93358042649720197</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Fork S.iges-1</Uid>
+</InstancePath>
+<Position>0.0024506928281348983 0.0038815095702073588 0.077810448946016963</Position>
+<Axis>0.40673664307580037 0 -0.91354545764260109</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Varilla C.iges-1</Uid>
+</InstancePath>
+<Position>0.030322299831837901 0.086199999999999999 0.14193795657682995</Position>
+<Axis>0.3583679495453001 0 -0.93358042649720197</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Fork S.iges-1</Uid>
+</InstancePath>
+<Position>0.04678057509713919 0.086171460235688113 0.097376620889081167</Position>
+<Axis>0.40673664307580037 0 -0.91354545764260109</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente22">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Fork S.iges-1</Uid>
+</InstancePath>
+<Position>0.048827034297542191 0.087809039970691727 0.11164232582618805</Position>
+<Axis>0.079620732894590165 0.99619469809174555 0.035449434229960483</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>0.067599211561982328 0.083699999999999997 0.10853006835288914</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Paralelo4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Fork B.iges-1</Uid>
+</InstancePath>
+<Position>0.17149999999999999 0.088900000000000007 0.10613631774492216</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>0.13600000000000007 0.083000000000000004 0.10650000000000004</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concéntrica17">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Fork S.iges-1</Uid>
+</InstancePath>
+<Position>0.043567454281714588 0.10958203564084402 0.10962900081401772</Position>
+<Axis>-0.079620732894590165 -0.99619469809174555 -0.035449434229960532</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>0.041099211561982305 0.099199999999999983 0.10853006835288914</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica18">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Fork B.iges-1</Uid>
+</InstancePath>
+<Position>0.16399999999999998 0.1095 0.1064363177449219</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>0.16400000000000009 0.11299999999999999 0.10650000000000004</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente24">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>-0.025499999999999995 0.0010000000000000009 0.024999999999999911</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.025499999999999995 0.0010074818028250609 0.025053212933678681</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente25">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>-0.025499999999999981 0.0010000000000000009 0.024958000000000036</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.025499999999999995 0.0010074818028250609 0.025011212933678362</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente27">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>-0.14120000000000005 0.06715469932082789 0.13885532396385014</Position>
+<Axis>0 -0.77349660413958299 -0.63380044444961825</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.16620000000000001 0.067007481802825106 0.13878177680863901</Position>
+<Axis>0 0.77349660413958299 0.63380044444961825</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente28">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Balance.iges-1</Uid>
+</InstancePath>
+<Position>-0.14120000000000002 0.10484561395287699 0.13883514145057219</Position>
+<Axis>0 0.77193023561705121 -0.63570725286109819</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.16620000000000004 0.10500748180282501 0.13876121293367905</Position>
+<Axis>0 -0.77193023561705121 0.63570725286109819</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente29">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.16449999999921502 0.0015074818028250753 0.025053212933678681</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>GP2Y0A21YK0F.step.iges-1</Uid>
+</InstancePath>
+<Position>-0.164499999999215 0.104488777289378 0.14419101378373722</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica19">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.18450000000000003 0.10450748180237698 0.14432404611793404</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>GP2Y0A21YK0F.step.iges-1</Uid>
+</InstancePath>
+<Position>-0.15099999999956801 0.104488777295315 0.14419101378373722</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica20">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Suport Sensor.iges-1</Uid>
+</InstancePath>
+<Position>-0.17510000000000006 0.067507481802246694 0.14432404611793404</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>GP2Y0A21YK0F.step.iges-1</Uid>
+</InstancePath>
+<Position>-0.15099999998523797 0.067488777295184002 0.14419101378373722</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Balance.iges" uid="Balance.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Balance.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00017777336476184803</Mass>
+<CenterOfMass>0.11526585287231496 0.085999999999989987 0.13484554433220164</CenterOfMass>
+<Inertia>7.8106901898582589e-08 1.6591916466221486e-08 9.0393673685984006e-08 -9.0553806216835394e-12 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Balance.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.3411764705882353" g="0.38823529411764707" b="1" a="1"/>
+<Diffuse r="0.3411764705882353" g="0.38823529411764707" b="1" a="1"/>
+<Specular r="0.17058823529411765" g="0.19411764705882353" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Ball.iges" uid="Ball.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Ball.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.033510321638291131</Mass>
+<CenterOfMass>0.1706 0.085999999999999993 0.1555</CenterOfMass>
+<Inertia>5.3616514621265808e-06 5.3616514621265808e-06 5.3616514621265808e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Ball.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Diffuse r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Specular r="0.24705882352941178" g="0.24705882352941178" b="0.2627450980392157" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base.iges" uid="Base.iges*:*Predeterminado" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.28301605882035441</Mass>
+<CenterOfMass>0.12959515763440194 0.079984605131569173 0.009942170749092389</CenterOfMass>
+<Inertia>0.00036992839245877121 0.00087000458095150171 0.0011806462912859505 -1.2681596298505923e-05 -7.2432354435872145e-05 -5.1746134839935565e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Base.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Cuerpo 06.iges" uid="Cuerpo 06.iges*:*Predeterminado" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Cuerpo 06.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0026279815604638218</Mass>
+<CenterOfMass>0.066734775927666898 0.086199999809240424 0.047080197891753828</CenterOfMass>
+<Inertia>8.9133996444296675e-08 9.1801006088914211e-08 8.6720008973610825e-08 -1.6047356483887523e-14 1.086778869560473e-09 -4.6356943720475789e-14</Inertia>
+</MassProperties>
+<GeometryFile name="Cuerpo 06.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="0" b="0" a="1"/>
+<Diffuse r="0" g="0" b="0" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Fork B.iges" uid="Fork B.iges*:*Predeterminado" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Fork B.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0029548642383735841</Mass>
+<CenterOfMass>0.16399992115976419 0.085999995908200039 0.096763636159186497</CenterOfMass>
+<Inertia>1.8123616497292047e-07 1.9653642216832345e-07 7.6691523772143402e-08 1.1817088450554485e-14 2.1645352098112721e-13 1.089840792740005e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Fork B.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Diffuse r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Specular r="0.24705882352941178" g="0.24705882352941178" b="0.2627450980392157" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Fork S.iges" uid="Fork S.iges*:*Predeterminado" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Fork S.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0028380917875206087</Mass>
+<CenterOfMass>0.045858194814810654 0.086171465614868978 0.099448084837988268</CenterOfMass>
+<Inertia>1.4918237972026546e-07 1.7599470200590195e-07 8.9844003672860783e-08 4.3570442069527524e-10 3.2951454137132034e-08 9.7867668682213475e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Fork S.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.019607843137254902" g="0.027450980392156862" b="0" a="1"/>
+<Diffuse r="0.019607843137254902" g="0.027450980392156862" b="0" a="1"/>
+<Specular r="0.019607843137254902" g="0.027450980392156862" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="GP2Y0A21YK0F.step.iges" uid="GP2Y0A21YK0F.step.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="GP2Y0A21YK0F.step.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0041461395300400345</Mass>
+<CenterOfMass>-0.15939773358939965 0.086280832111191572 0.14442400633243663</CenterOfMass>
+<Inertia>4.0106627328904714e-07 1.0262052311970982e-07 3.9066085618790374e-07 2.8549281221718605e-10 9.756224816175742e-11 -7.3235048969979036e-09</Inertia>
+</MassProperties>
+<GeometryFile name="GP2Y0A21YK0F.step.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="0" b="0" a="1"/>
+<Diffuse r="0" g="0" b="0" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MG996R.step.iges" uid="MG996R.step.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="MG996R.step.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.030866446149038693</Mass>
+<CenterOfMass>0.030608271739287971 0.12590912745923974 0.043199968299215664</CenterOfMass>
+<Inertia>4.7023490067666537e-06 5.3255106714611547e-06 7.9733306432348202e-06 -1.6141902590940128e-11 2.0202711653355819e-11 5.3406232872753023e-09</Inertia>
+</MassProperties>
+<GeometryFile name="MG996R.step.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Roda.iges" uid="Roda.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Roda.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.013871135804205036</Mass>
+<CenterOfMass>0.040550725509616824 0.096199999974709252 0.043198757866835615</CenterOfMass>
+<Inertia>3.1699747303642226e-06 6.2562604617721596e-06 3.1435747472550762e-06 5.1265380900716657e-13 4.923541423143434e-10 -1.2411817787365931e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Roda.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.11372549019607843" g="0.25098039215686274" b="0.84705882352941175" a="1"/>
+<Diffuse r="0.11372549019607843" g="0.25098039215686274" b="0.84705882352941175" a="1"/>
+<Specular r="0.056862745098039215" g="0.12549019607843137" b="0.42352941176470588" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Soport Servo.iges" uid="Soport Servo.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Soport Servo.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.069915027547209865</Mass>
+<CenterOfMass>0.028992268735537785 0.13401852967125499 0.027641802905671579</CenterOfMass>
+<Inertia>2.3567454842324733e-05 4.1717448396554045e-05 3.0432354189375582e-05 -5.6752025098109343e-07 1.0961821893696846e-06 6.7524280553467461e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Soport Servo.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Suport Sensor.iges" uid="Suport Sensor.iges*:*Predeterminado" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Suport Sensor.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.013657419284036673</Mass>
+<CenterOfMass>-0.12241496942063688 0.085976212816625028 0.13999001736126901</CenterOfMass>
+<Inertia>5.0276940796692293e-06 3.0677898296253339e-05 3.4991932149651396e-05 8.9389889875010039e-11 1.6067771581717397e-06 1.1818854666384331e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Suport Sensor.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Varilla C.iges" uid="Varilla C.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Varilla C.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.001357035846489065</Mass>
+<CenterOfMass>0.057558263997280611 0.08620000000000004 0.070985844163042933</CenterOfMass>
+<Inertia>2.3051609223464609e-07 2.63592831428168e-07 3.9170455296405623e-08 -4.4911633954576232e-14 8.6144192678967703e-08 -1.169988045633786e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Varilla C.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Diffuse r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Specular r="0.24705882352941178" g="0.24705882352941178" b="0.2627450980392157" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Varilla LL.iges" uid="Varilla LL.iges*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Varilla LL.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0021234831965916269</Mass>
+<CenterOfMass>0.16400000000000003 0.086000000000000007 0.056549999999999906</CenterOfMass>
+<Inertia>1.0028700592445012e-06 1.0028721491799539e-06 9.5554127070581115e-09 0 0 -1.9607778269341481e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Varilla LL.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Diffuse r="0.49411764705882355" g="0.49411764705882355" b="0.52549019607843139" a="1"/>
+<Specular r="0.24705882352941178" g="0.24705882352941178" b="0.2627450980392157" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="arm_4pad.iges" uid="arm_4pad.iges*:*Predeterminado" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="arm_4pad.iges.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0012380774427801554</Mass>
+<CenterOfMass>0.04062073166009645 0.10098826951464279 0.04319998067608892</CenterOfMass>
+<Inertia>7.4178515444822403e-08 1.4540702968732753e-07 7.4177372429671362e-08 5.0909541776124179e-14 2.3683366216820541e-13 -1.2596107386630953e-13</Inertia>
+</MassProperties>
+<GeometryFile name="arm_4pad.iges_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

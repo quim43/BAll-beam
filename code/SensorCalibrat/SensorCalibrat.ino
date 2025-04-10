@@ -1,7 +1,7 @@
 const int pinSensor = A0; // Pin donde está conectado el sensor
 float distancia;
-const float a = 19661.88; 
-const float b = -1.282;  
+const float a = 10988.20; 
+const float b = -1.147;  
 
 void setup() {
     Serial.begin(9600); // Inicia comunicación serial

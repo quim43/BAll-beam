@@ -1,114 +1,120 @@
 #include <Servo.h>  
 
+/////////////////////// Calibración del sensor ///////////////////////
+const float A = 10988.20; 
+const float b = -1.147;  
+
 /////////////////////// Parámetros del sistema ///////////////////////
-const float m = 0.046;   // Masa de la bola (kg)
-const float R = 0.02125; // Radio de la bola (m)
-const float g = 9.81;    // Aceleración de la gravedad (m/s^2)
-const float L = 0.30;    // Longitud de la viga (m)
-const float I = (2.0/5.0) * m * R * R; // Momento de inercia
+const float m = 0.02;
+const float R = 0.02;
+const float g = 9.81;
+const float L = 0.30;
+const float I = (2.0 / 5.0) * m * R * R;
+const float dt = 0.01;
+const float K = (-m * g * R) / (L * (m + I / (R * R)));
 
-const float dt = 0.05;  
-const float K = (-m * g * R) / (L * (m + I / (R * R)));  
-
-/////////////////////// PID (Ajustado) //////////////////////
-float Kp = 6.8; //6.8;    // Aumentado para mejor respuesta
-float Ki = 2.9;    // Incrementado para eliminar error en estado estacionario
-float Kd = 0.90;
+/////////////////////// PID ///////////////////////
+float Kp = 114;
+float Ki = 3.2; //3.6;
+float Kd = 0.051;
+float Q = 2250;
 
 /////////////////////// Sensores y actuadores ///////////////////////
 const int pinSensor = A0;
 const int pinServo = 9;
 Servo miServo;
 
-/////////////////////// Variables de estado ///////////////////////
-float distancia;  
-float distancia_setpoint = 15.0;  // **Centro de la viga en 20 cm**
+/////////////////////// Estado del sistema ///////////////////////
+float distancia;
+float distancia_setpoint = 17.20;
 float distancia_error, distancia_error_anterior, distancia_integral = 0;
 float PID_p, PID_i, PID_d, PID_total;
 float angulo_servo;
-float tiempo, tiempoPrevio;
+float distancia_filtrada = 0; // Nueva variable para filtro
 
-/////////////////////// Variables de la dinámica del sistema ///////////////////////
-float x;  // **Posición inicial de la bola**
-float v = 0.0;  // Velocidad inicial
-float a = 0.0;  // Aceleración inicial
-float theta;    // Ángulo inicial del servo en radianes
+/////////////////////// Modelo dinámico ///////////////////////
+float x;
+float v = 0.0;
+float a = 0.0;
+float theta;
 
-// **Umbral de tolerancia para detener el PID**
-const float umbral_error = 0.8;  // La bola se considera estabilizada si el error es menor a 0.5 cm
+const float umbral_error = 0.3;
 
 void setup() {
-    Serial.begin(9600);
-    miServo.attach(pinServo);
-    
-    // **Forzar la posición inicial del servo en 90°**
-    miServo.write(90);
-    delay(1000); // **Esperar a que el servo se estabilice**
+  Serial.begin(9600);
+  miServo.attach(pinServo);
+  miServo.write(90); // Posición inicial
 
-    // **Medir la posición inicial de la bola**
-    int adcValor = analogRead(pinSensor);
-    x = 19661.88 * pow(adcValor, -1.282);  // **Posición inicial de la pelota**
+  delay(1000); // Espera a que el servo se estabilice
 
-    tiempoPrevio = millis();
+  // Medir posición inicial de la bola
+  int adcValor = analogRead(pinSensor);
+  distancia_filtrada = A * pow(adcValor, b);
+  x = distancia_filtrada;
 }
 
 void loop() {
-    // 1. **Leer el sensor con filtro de promedio**
-    distancia = leerSensorPromediado(3);  
+  // 1. Leer sensor con filtro exponencial suavizado
+  distancia = leerSensorFiltrado(0.150);  // Alpha entre 0.2 y 0.4 0.25
 
-    // 2. **Calcular error**
-    distancia_error = distancia_setpoint - distancia;
+  // 2. Calcular error
+  distancia_error = distancia_setpoint - distancia;
 
-    // 3. **Si la distancia está dentro del umbral, detenemos el control**
-    if (abs(distancia_error) < umbral_error) {
-        Serial.println("🎯 Pilota estable!");
-        return;  // **No ajustamos el servo si la pelota ya está en su sitio**
-    }
+  // 3. Si está en el umbral, no actuamos
+  if (abs(distancia_error) < umbral_error) {
+    print(distancia);
+    return;
+  }
 
-    // 4. **Calcular PID**
-    PID_p = Kp * distancia_error;
-    distancia_integral += distancia_error * dt;
-    distancia_integral = constrain(distancia_integral, -30, 30);  
-    PID_i = Ki * distancia_integral;
-    PID_d = Kd * ((distancia_error - distancia_error_anterior) / dt);
-    
-    PID_total = (PID_p + PID_i + PID_d);  
+  // 4. PID
+  PID_p = Kp * distancia_error;
+  distancia_integral += distancia_error * dt;
+  distancia_integral = constrain(distancia_integral, -33, 33);
+  PID_i = Ki * distancia_integral;
+  PID_d = Kd * ((distancia_error - distancia_error_anterior) / dt);
+  PID_total = PID_p + PID_i + PID_d;
 
-    // 5. **Convertir PID a ángulo del servo**
-    angulo_servo = map(PID_total, -200, 200, 160, 20);  
-    angulo_servo = constrain(angulo_servo, 20, 160);
-    miServo.write(angulo_servo);
+  // 5. Calcular ángulo del servo
+  angulo_servo = map(PID_total, -Q, Q, 180, 10);
+  angulo_servo = constrain(angulo_servo, 10, 180);
+  miServo.write(angulo_servo);
 
-    // 6. **Corrección de la función de transferencia**
-    theta = (angulo_servo - 90) * (PI / 180.0);  
-    a = K * theta;  
+  // 6. Modelo físico
+  theta = (angulo_servo - 90) * (PI / 180.0);
+  a = K * theta;
+  v += a * dt;
+  v = constrain(v, -8, 8);
+  x += v * dt + 0.5 * a * dt * dt;
+  x = constrain(x, 5, 25);
 
-    v += a * dt;  
-    v = constrain(v, -8, 8);  
-    x += v * dt + 0.5 * a * dt * dt;  
-    x = constrain(x, 5, 25);  
+  // 7. Guardar error previo
+  distancia_error_anterior = distancia_error;
 
-    // 7. **Guardar el error previo**
-    distancia_error_anterior = distancia_error;
+  // 8. Imprimir datos
+  print(distancia);
 
-    // 8. **Mostrar valores en el puerto serie**
-    Serial.print("Distancia Sensor: ");
-    Serial.print(distancia);
-    Serial.print(" cm | Posición Modelo: ");
-    Serial.print(x);
-    Serial.print(" cm | Servo: ");
-    Serial.println(angulo_servo);
-
-    // 9. **Esperar el tiempo de muestreo**
-    delay(dt * 1000);
+  // 9. Delay
+  delay(dt * 1000);
 }
 
-// **Función para filtrar el ruido del sensor**
-float leerSensorPromediado(int num_muestras) {
-    float suma = 0;
-    for (int i = 0; i < num_muestras; i++) {
-        suma += analogRead(pinSensor);
-        delay(2);  
-    }
-    return 19661.88 * pow(suma / num_muestras, -1.282);  
+// Filtro exponencial suavizado
+float leerSensorFiltrado(float alpha) {
+  float adc = 0;
+  for (int i = 0; i < 10; i++) {
+    adc += analogRead(pinSensor);
+    delay(1);
+  }
+  adc /= 10;
+
+  float lectura_actual = A * pow(adc, b);
+  distancia_filtrada = alpha * lectura_actual + (1 - alpha) * distancia_filtrada;
+  return distancia_filtrada;
+}
+
+// 📊 Imprimir en formato para plotter
+float print(float valor) {
+  Serial.print(0); Serial.print(" ");
+  Serial.print(35); Serial.print(" ");
+  Serial.print(valor); Serial.print(" ");
+  Serial.println(distancia_setpoint);
 }

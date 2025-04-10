@@ -1,0 +1,10 @@
+       Diagnóstico de errores para fallo de análisis/conjunto
+
+  No se pueden satisfacer simultáneamente todas las restricciones de posición. 
+No se pueden satisfacer las siguientes restricciones de posición:
+
+
+1) No se puede cerrar el siguiente bucle cinemático: Ground - body1 - body2 -
+body3 - Ground.
+
+

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="quimg" on="04/10/25||19:48:43" using="Simscape Multibody Link Version 7.4" from="Pro/Engineer Creo 11.0 - 2024063"/>
+<ModelUnits mass="kg" length="mm"/>
+<RootAssembly name="BALL_BEAM_V4" uid="BALL_BEAM_V4_asm" version="32391">
+<AssemblyFile name="BALL_BEAM_V4.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="BASE_V4" grounded="true" uid="40" entityUid="BASE_V4_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>5.9055118110236222 0 -2.9527559055118111</Translation>
+</Transform>
+</Instance>
+<Instance name="BASE_SERVO_V4" uid="43" entityUid="BASE_SERVO_V4_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-109.09389866095798 5 -61.927972599855096</Translation>
+</Transform>
+</Instance>
+<Instance name="SERVO_V4" uid="44" entityUid="SERVO_V4_prt">
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>-108.59389866095796 43.5 -73.427972599855096</Translation>
+</Transform>
+</Instance>
+<Instance name="X_V4" uid="45" entityUid="X_V4_prt">
+<Transform>
+<Rotation>0.99999888538597026 0 -0.0014930595491330642 0.0014930595491330642 0 0.99999888538597026 0 -1 0</Rotation>
+<Translation>-119.09389866095796 43.5 -24.927972599855096</Translation>
+</Transform>
+</Instance>
+<Instance name="RODA_V4" uid="60" entityUid="RODA_V4_prt">
+<Transform>
+<Rotation>0.99999888538597026 0 0.0014930595491403906 0.0014930595491403906 0 -0.99999888538597026 0 1.000000000000022 3.0599134337450767e-13</Rotation>
+<Translation>-119.09389866095796 43.5 -24.927972599855096</Translation>
+</Transform>
+</Instance>
+<Instance name="BASE_VARILLA_CURTA" uid="62" entityUid="BASE_VARILLA_CURTA_prt">
+<Transform>
+<Rotation>0.99981779069095245 0.019088882048533359 0 -0.019088882048533359 0.99981779069095245 0 0 0 1</Rotation>
+<Translation>-146.17022409457331 39.460416229409596 -12.427972599855089</Translation>
+</Transform>
+</Instance>
+<Instance name="VARILLA_CURTA_V4" uid="63" entityUid="VARILLA_CURTA_V4_prt">
+<Transform>
+<Rotation>0.99981779069095245 0.019088882048532471 0 -0.019088882048532471 0.99981779069095245 0 0 0 1</Rotation>
+<Translation>-145.97933527408793 49.458594136319192 -12.427972599855094</Translation>
+</Transform>
+</Instance>
+<Instance name="FORK_V4" uid="64" entityUid="FORK_V4_prt">
+<Transform>
+<Rotation>0 0.019088882048532377 0.99981779069095245 0 0.99981779069095245 -0.019088882048532377 -1 0 0</Rotation>
+<Translation>-145.13942446395248 93.450576926721084 -12.427972599855105</Translation>
+</Transform>
+</Instance>
+<Instance name="VAR" uid="84" entityUid="VAR_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>140.28410978837854 24 -12.431353882866734</Translation>
+</Transform>
+</Instance>
+<Instance name="FORK_V4" uid="85" entityUid="FORK_V4_prt">
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>140.28410978837854 93.459999999999994 -12.431353882866734</Translation>
+</Transform>
+</Instance>
+<Instance name="BALANCE_V4" uid="88" entityUid="BALANCE_V4_prt">
+<Transform>
+<Rotation>0 -0.99999999888378643 4.7248569555291539e-05 1.9983909485740471e-15 -4.7248569555291539e-05 -0.99999999888378643 1 0 1.9983909508046787e-15</Rotation>
+<Translation>-2.2174219307074634 148.06245008651669 -12.075234265272057</Translation>
+</Transform>
+</Instance>
+<Instance name="BALL_V4" uid="96" entityUid="BALL_V4_prt">
+<Transform>
+<Rotation>-4.7248555469225899e-05 -3.6483969012568484e-08 -0.99999999888378643 0.99999970075983502 0.0007721708444750065 -4.7248569555157031e-05 0.00077217084533691416 -0.99999970187604836 1.1182032264237045e-15</Rotation>
+<Translation>32.239174089277185 153.78388364599374 -12.058243699243747</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Rigid name="Rigid_43_0">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>43</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_44_0">
+<InstancePath>
+<Uid>43</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>44</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_45_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>44</Uid>
+</InstancePath>
+<Position>10.5 40 1.8369701987210297e-16</Position>
+<Axis>0 6 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>45</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 2.5 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_45_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>44</Uid>
+</InstancePath>
+<Position>0 46 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>45</Uid>
+</InstancePath>
+<Position>0 2.5 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_60_0">
+<InstancePath>
+<Uid>45</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_62_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>-27 0 0</Position>
+<Axis>0 5 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>62</Uid>
+</InstancePath>
+<Position>0 4 -7.5</Position>
+<Axis>0 0 15</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_62_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>60</Uid>
+</InstancePath>
+<Position>0 5 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>62</Uid>
+</InstancePath>
+<Position>7.5 0 -7.4999999999999991</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_63_0">
+<InstancePath>
+<Uid>62</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_64_0">
+<InstancePath>
+<Uid>63</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>64</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_64_1">
+<InstancePath>
+<Uid>62</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>64</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_84_0">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>84</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_85_0">
+<InstancePath>
+<Uid>84</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>85</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_85_1">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>85</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_88_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>64</Uid>
+</InstancePath>
+<Position>-7.5 22.1875 0</Position>
+<Axis>15 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>-3.5105196175947473 142.5 32.42168304386783</Position>
+<Axis>6.8977592952492204 0 1.4210854715202004e-14</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_88_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>64</Uid>
+</InstancePath>
+<Position>-3.75 25 7.5</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>3.3872396776544966 150 22.421683043867844</Position>
+<Axis>-1 0 -2.3684757858670005e-15</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident_88_2">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>85</Uid>
+</InstancePath>
+<Position>-7.5 22.1875 0</Position>
+<Axis>15 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>3.3872396776544731 -142.5 32.421683043867844</Position>
+<Axis>-6.8977592952492204 0 -1.4210854715202004e-14</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_88_3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>85</Uid>
+</InstancePath>
+<Position>-3.75 25 7.5</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>-3.5105196175947238 -135 22.42168304386783</Position>
+<Axis>-1 0 -2.3684757858670005e-15</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident_96_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>0.016990566028320001 145 -5.7198055282169591</Position>
+<Axis>0 5 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>96</Uid>
+</InstancePath>
+<Position>7.0154543859877415e-15 0 -20.000000000000011</Position>
+<Axis>-7.3478807948841215e-15 0 40.000000000000021</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_96_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>88</Uid>
+</InstancePath>
+<Position>4.6999999999999993 -150 13.09148694102004</Position>
+<Axis>0.00077217084533954487 0 -0.99999970187604847</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>96</Uid>
+</InstancePath>
+<Position>-20 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BALANCE_V4" uid="BALANCE_V4_prt" version="3896">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BALANCE_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.14445423539544325</Mass>
+<CenterOfMass>0.014860048062281127 0 14.128424949979939</CenterOfMass>
+<Inertia>1148.8824807966994 26.605976603072229 1166.9722329076051 0 0.0041541296555941166 0</Inertia>
+</MassProperties>
+<GeometryFile name="balance_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="BALL_V4" uid="BALL_V4_prt" version="346">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BALL_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.013268625780970107</Mass>
+<CenterOfMass>-1.4763444661682428 0 0</CenterOfMass>
+<Inertia>2.7446746638041635 2.9390985613920573 2.9390984239723092 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ball_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="BASE_SERVO_V4" uid="BASE_SERVO_V4_prt" version="3041">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BASE_SERVO_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.097147652184136665</Mass>
+<CenterOfMass>0 26.432768839812301 -0.55885771146477603</CenterOfMass>
+<Inertia>42.997958160229189 41.480629524440772 67.235743533678814 0.7483265322493714 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_servo_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="BASE_V4" uid="BASE_V4_prt" version="3049">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BASE_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.32444914950246823</Mass>
+<CenterOfMass>18.732337858347147 5.2081276740493152 -1.2547202886624904</CenterOfMass>
+<Inertia>547.44273829795918 3309.9106859667418 2803.8572743964828 7.2580621597696675 51.900695321774826 -101.80910160052251</Inertia>
+</MassProperties>
+<GeometryFile name="base_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="BASE_VARILLA_CURTA" uid="BASE_VARILLA_CURTA_prt" version="356">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="BASE_VARILLA_CURTA.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.004927632625741322</Mass>
+<CenterOfMass>0 9.8249941105777392 0</CenterOfMass>
+<Inertia>0.2563802842770701 0.18828170874404399 0.25911119493108142 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_varilla_curta_prt.step" type="STEP"/>
+</Part>
+<Part name="FORK_V4" uid="FORK_V4_prt" version="1076">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="FORK_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.0047701068880787439</Mass>
+<CenterOfMass>0 10.207996248095881 0</CenterOfMass>
+<Inertia>0.28334636659574186 0.20166693299963484 0.30827366681710106 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="fork_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="RODA_V4" uid="RODA_V4_prt" version="319">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="RODA_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.017137796826766836</Mass>
+<CenterOfMass>0.079191551676835906 2.4999999999999996 0</CenterOfMass>
+<Inertia>3.8962960248066616 7.6856713630116058 3.8595419835175071 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="roda_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="SERVO_V4" uid="SERVO_V4_prt" version="566">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="SERVO_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.044060664530781113</Mass>
+<CenterOfMass>0.050534747711622807 20.301009881807776 0</CenterOfMass>
+<Inertia>7.5540012310955325 8.1188742278326309 12.439808501701465 0 0 -0.050541484961081608</Inertia>
+</MassProperties>
+<GeometryFile name="servo_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="VARILLA_CURTA_V4" uid="VARILLA_CURTA_V4_prt" version="150">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="VARILLA_CURTA_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.010993061013441403</Mass>
+<CenterOfMass>0 27 0</CenterOfMass>
+<Inertia>2.6960485415483957 0.049468774560486331 2.6960478855446142 0 1.0094860194933868e-06 0</Inertia>
+</MassProperties>
+<GeometryFile name="varilla_curta_v4_prt.step" type="STEP"/>
+</Part>
+<Part name="VAR" uid="VAR_prt" version="161">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="VAR.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.016176085706075073</Mass>
+<CenterOfMass>0 39.729999999999997 0</CenterOfMass>
+<Inertia>8.5475676471929916 0.07279238567733784 8.5475666818955744 0 1.4854399834968986e-06 0</Inertia>
+</MassProperties>
+<GeometryFile name="var_prt.step" type="STEP"/>
+</Part>
+<Part name="X_V4" uid="X_V4_prt" version="531">
+<ModelUnits mass="kg" length="mm"/>
+<PartFile name="X_V4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.0013340515052758994</Mass>
+<CenterOfMass>0 1.7856267674956747 0</CenterOfMass>
+<Inertia>0.062179525329319515 0.12021211253364236 0.062179551148744364 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="x_v4_prt.step" type="STEP"/>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

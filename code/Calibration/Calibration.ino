@@ -8,7 +8,7 @@ void loop() {
   int ADC_SHARP=ADC0_promedio(20);
   Serial.print(0);
   Serial.print(" ");
-  Serial.print(500);
+  Serial.print(700);
   Serial.print(" ");
   Serial.print(ADC_SHARP);
   Serial.println(" ");

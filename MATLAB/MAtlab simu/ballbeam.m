@@ -43,7 +43,7 @@ function ballbeam(action)
         % Basic dimensions.
 
         ballradius = 1;
-        beamlength = 20;
+        beamlength = 30;
         beamwidth = 0.3;
 
         % System parameters
